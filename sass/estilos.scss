@@ -1,0 +1,9 @@
+
+// Aca en la hoja principal solo se vinculan las variables de los partials que se creen
+// No puede ir código debajo de las variables, sólo varibles
+// los partial siempre llevan un _ejemplo para iniciar
+ 
+
+// @use "partials/variables.scss"; no se coloca aui para que no se cargue globalmente
+@use "partials/main";
+@use "partials/queries"

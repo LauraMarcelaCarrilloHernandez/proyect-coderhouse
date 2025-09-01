@@ -1,0 +1,170 @@
+@use "variables" as*;
+
+/*Mobile*/
+@media (max-width: 480px){
+
+h1{
+    font-size: 2.4rem;
+    font-weight: 800;
+    font-family: "Archivo", sans-serif;
+}
+
+h2{
+    font-size: 2.2rem;
+    font-weight: 800;
+    font-family: "Archivo", sans-serif;
+}
+
+h3{
+    font-size: 2.0rem;
+    font-weight: 700;
+    font-family: "Archivo", sans-serif;
+}
+
+
+
+/* -------------- Inicio -------------- */
+
+header {
+    .container-fluid{
+      padding: 0 20px;
+        img { 
+            width: 164px;
+            margin: 0;
+            transition: all 1s;
+        }
+    }
+}
+
+.content-bio{
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+
+    .hero-img img{
+        width: 300px;
+    }
+
+    .hero-text{
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+}  
+
+.services{
+  display: flex;
+  flex-direction: column;
+
+    .services-text{
+        width: 100%;
+        text-align: center;
+    }
+
+    .services-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* -------------- Inicio -------------- */
+
+/* -------------- Sobre mi -------------- */
+
+.education-grid{
+  width: 100%;
+  grid-template-areas: 
+  "card1"
+  "card2"
+  "card3"
+  "card4"
+  "card5"
+  "card6"
+  "card7"
+  ;
+  grid-template-rows: repeat(7, 264px);
+  grid-template-columns: 1fr;
+}
+
+.exp-container{
+  width: 100%;
+  flex-direction: column;
+}
+
+.main-title{
+  padding: 0 0 40px 0;
+}
+.exp-card{
+    padding: 24px;
+    ul{
+        padding-left: 0;
+    }
+}
+/* -------------- Sobre mi -------------- */
+
+
+/* -------------- Proyectos -------------- */
+.proyectos-container{
+    flex-direction: column;
+    gap: 24px;
+
+    .card-proyect {
+        width: 100%;
+    }
+}
+
+/* -------------- Proyectos -------------- */
+  
+
+/* -------------- Consejos UX -------------- */
+  .contenedor {
+    width: 100%;
+    grid-template-areas: 
+    "video1"
+    "video2"
+    "video3"
+    "video4"
+    "video5"
+    "video6"
+    "video7";
+    grid-template-rows: repeat(7,200px);
+    grid-template-columns: 100%;
+    margin: 0;
+  }
+/* -------------- Consejos UX -------------- */
+
+/* -------------- Contacto -------------- */
+.contact-section{
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    padding: 0;
+
+    .contact-text{
+        padding-right: 0;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 40px;
+    }
+    .contact-form, .form-row{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+/* -------------- Contacto -------------- */
+
+
+/* -------------- Footer -------------- */
+.footer{
+    .footer-right {
+        align-items: flex-start;
+
+        .footer-icons{
+            justify-content: space-between;
+            gap: 100px;
+        }
+    }
+}
+  /* -------------- Footer -------------- */
+}
